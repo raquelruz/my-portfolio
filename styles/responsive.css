@@ -1,0 +1,28 @@
+/* Mobile First */
+
+/* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
+
+/* Media query para dispositivos TABLET (mayores a 480px) */
+@media (min-width: 481px) {
+	:root {
+		--bg-color: lightcoral;
+		--container-width: 85%;
+	}
+
+}
+
+/* Media query para dispositivos DESKTOP (mayores a 1024px) */
+@media (min-width: 1024px) {
+	:root {
+		--bg-color: beige;
+		--container-width: 80%;
+	}
+}
+
+/* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
+@media (min-width: 1440px) {
+	:root {
+		--bg-color: aquamarine;
+		--container-width: 75%;
+	}
+}
