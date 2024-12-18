@@ -1,7 +1,4 @@
 /* Mobile First */
-
-/* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
-
 /* Media query para dispositivos TABLET (mayores a 480px) */
 @media (min-width: 481px) {
 	:root {
@@ -9,6 +6,14 @@
 		--container-width: 85%;
 	}
 
+	.mobile-nav {
+		font-size: 30px;
+	}
+
+	h1, h2 {
+		font-weight: 600;
+		font-size: 50px;
+	}
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
@@ -17,6 +22,46 @@
 		--bg-color: beige;
 		--container-width: 80%;
 	}
+
+	.mobile-nav {
+		display: none;
+	}
+	
+	.desktop-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.desktop-nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		gap: 20px;
+		font-size: 14px;
+	}
+
+	h1, h2 {
+		font-weight: 600;
+		font-size: 50px;
+	}
+
+	.about-me-container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 20px;
+	}
+
+	.about-me-container h2 {
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	.about-me-container p {
+		font-size: 20px;
+	}
 }
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
@@ -24,5 +69,19 @@
 	:root {
 		--bg-color: aquamarine;
 		--container-width: 75%;
+	}
+
+	h1, h2 {
+		font-weight: 600;
+		font-size: 60px;
+	}
+
+	.about-me-container h2 {
+		font-size: 36px;
+		font-weight: 500;
+	}
+
+	.about-me-container p {
+		font-size: 24px;
 	}
 }
