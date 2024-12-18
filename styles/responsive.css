@@ -10,9 +10,18 @@
 		font-size: 30px;
 	}
 
-	h1, h2 {
-		font-weight: 600;
-		font-size: 50px;
+	h1, h2, h3 {
+		font-weight: 500;
+		font-size: 30px;
+	}
+
+	.projects-cards-container {
+		flex-direction: row;
+		padding: 8px 0;
+	}
+
+	.projects-cards {
+		flex-direction: column;
 	}
 }
 
@@ -41,7 +50,7 @@
 		font-size: 14px;
 	}
 
-	h1, h2 {
+	h1, h2, h3 {
 		font-weight: 600;
 		font-size: 50px;
 	}
@@ -54,7 +63,8 @@
 		padding: 0 20px;
 	}
 
-	.about-me-container h2 {
+	.about-me-container h2,
+	.projects-container h3 {
 		font-size: 30px;
 		font-weight: 500;
 	}
@@ -62,6 +72,11 @@
 	.about-me-container p {
 		font-size: 20px;
 	}
+
+	.projects {
+		padding: 0 20px;
+	}
+
 }
 
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */

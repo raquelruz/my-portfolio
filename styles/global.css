@@ -29,7 +29,7 @@ a {
 
 /* Referencias de estilos genéricas (sustituir por los colores deseados) */
 :root {
-    --bg-color: #F4EFE6;
+    --bg-color: #FFFFFF;
     --accent-bg-color: #D6E0E2;
     --text-color: #162A2C;
     --text-light-color: #FEFCF6;
@@ -47,6 +47,11 @@ body {
     background-color: var(--bg-color);
 }
 
+h1, h2, h3 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
 .mobile-nav {
     display: flex;
     flex-direction: row;
@@ -60,8 +65,7 @@ body {
 }
 
 .container {
-    margin: 10px 0;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .introduction-container {
@@ -76,9 +80,36 @@ body {
     justify-content: center;
     align-items: flex-start;
     border: 1px solid black;
+    padding: 20px 0;
 }
 
-h1, h2 {
-    font-weight: 600;
-    font-size: 40px;
+.projects-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects-cards {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+
+.projects-cards h4 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.projects-img {
+    width: 100%;
+    padding: 4px;
+}
+
+.projects-img img {
+    border-radius: 10px;
 }
